@@ -1,3 +1,5 @@
+//Crear un programa en c++ que sirva para derivar unba función exponencial básica de datos almacenados en el programa, no olvide utilizar objetos.
+
 #include<iostream> 
 using namespace std;
 
@@ -6,28 +8,39 @@ class deriva{
     int base;
     int exponente;
 
-    public: 
-    deriva (int);
+    public: //metodos
+    //metodo constructor
+    deriva (int, int);
 
     void Prim_derivada();
-    void Seg_derivada();
 };
 
 deriva :: deriva (int _base, int _exponente){
    base = _base;
    exponente=_exponente;
-
 }
 
 void deriva :: Prim_derivada (){
-    cout <<"Aqui debemos derivar"endl;
+    int _deriva, _expderivado;
+    
+
+    _deriva = base*exponente;
+    _expderivado = exponente - 1;
+    cout <<_deriva<<"x ^"<<_expderivado<<endl;
 }
 
-void deriva :: Seg_derivada (){
-    cout <<"Aqui debemos derivar por seguda vez"endl;
-}
-
+//instanciacion de clases, crear objetos
 int main (){
+    // Valores dados en el programa;
+    deriva r1(2,3);
 
+
+    cout <<"Ingrese la base de la funcion a deirvar"<<endl;
+    cin >> r1.base>>endl;
+
+    cout <<"Ingrese el exponente de la funcion a deirvar"<<endl;
+    cin >> r1.exponente>>endl;
+
+    r1.Prim_derivada();
     system("pause");
 }
