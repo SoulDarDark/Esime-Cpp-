@@ -50,7 +50,7 @@ int main()
    cout << "la resistencia total es: " << restotal << " ohms" <<  endl;
 
    voltal = Volt_total(v1, v2);//darle parametros de recibimiento
-   cout << "El voltaje toalt es: " << voltal << " volts" << endl;
+   cout << "El voltaje total es: " << voltal << " volts" << endl;
 
    return 0;
 }
