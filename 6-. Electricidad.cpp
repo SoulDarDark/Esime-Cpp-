@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> //Calculo de voltaje total y resistencia total por medio de funciones
 
 using namespace std;
 
