@@ -1,6 +1,7 @@
 // Juego Matematicas.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
 // Programa que calcula el gradiente
 //Crear un programa en c++ que sirva para derivar unba función exponencial básica de datos almacenados en el programa, no olvide utilizar objetos.
+//sea F(xy)=axy^n grad=(ay^n , a(nx)y^n-1)
 
 #include <iostream>
 #include <stdlib.h>
