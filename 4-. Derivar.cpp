@@ -1,5 +1,5 @@
-//Crear un programa en c++ que sirva para derivar unba función exponencial básica de datos almacenados en el programa, no olvide utilizar objetos.
-
+//Crear un programa en c++ que sirva para derivar parcialmetne una función exponencial básica de datos almacenados en el programa, no olvide utilizar objetos.
+// f(xy)= xy
 #include<iostream> 
 using namespace std;
 
