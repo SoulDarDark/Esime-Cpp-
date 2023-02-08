@@ -1,9 +1,14 @@
 #include <iostream>
 #include <time.h>
 #include <cstdlib>
+
+
 void imprimir(int[]);
 void inimanual(int[], int);
 void inialeatorio(int[], int);
+void iniconN(int[],int);
+void inidelaN(int[],int);
+void sumatoria(int[],int);
 
 using namespace std;
 
@@ -43,27 +48,29 @@ int main()
             inialeatorio(arreglo, n);
             break;
 
-            /*case 3:
-	   cout<<"cuantos datos quieres ingresar";
-	   cin>>n;
-	   iniconN;
-	break;
+        case 3:
+	        cout<<"cuantos datos quieres ingresar";
+	        cin>>n;
+	        iniconN(arreglo, n);
+	        break;
 	
-	//case 4:
-		cout<<"cuantos datos quieres ingresar";
-	   cin>>n;
-	   inide1aN(arreglo,n);
-	break;
+	    case 4:
+	    	cout<<"cuantos datos quieres ingresar";
+	        cin>>n;
+	        inidelaN(arreglo,n);
+	        break;
 	
-	//case 5:
-	   s=sumatoria(arreglo);
-	   cout<<"la sumatoria es:"<<sumatoria<<"/n";
-	break;
-     */
+	    case 5:
+	        s=sumatoria(arreglo, n);
+	        cout<<"la sumatoria es:"<<sumatoria<<"/n";
+	        break;
 
         case 6:
             int maxi(int a[20], int n);
             break;
+
+        case 7:
+            int min(int a[20], int n);
         }
     }
 }
@@ -93,4 +100,16 @@ void inialeatorio(int a[20], int n)
     srand(time(NULL));
     for (i = 0; i < n; i++)
         a[i] = 1 + rand() % 100;
+}
+
+void iniconN(int a[20],int n){
+
+}
+
+void inidelaN(int a[20],int n){
+
+}
+
+void sumatoria(int a[20],int n){
+
 }
