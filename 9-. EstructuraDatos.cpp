@@ -9,6 +9,8 @@ void inialeatorio(int[], int);
 void iniconN(int[],int);
 void inidelaN(int[],int);
 void sumatoria(int[],int);
+void minimo(int[],int);
+
 
 using namespace std;
 
@@ -60,17 +62,19 @@ int main()
 	        inidelaN(arreglo,n);
 	        break;
 	
-	    case 5:
-	        s=sumatoria(arreglo, n);
-	        cout<<"la sumatoria es:"<<sumatoria<<"/n";
-	        break;
+	    //case 5:
+	     //   s=sumatoria(arreglo, n);
+	     //   cout<<"la sumatoria es:"<<sumatoria<<"/n";
+	     //   break;
 
         case 6:
             int maxi(int a[20], int n);
             break;
 
-        case 7:
-            int min(int a[20], int n);
+        //case 7:
+          //  min(arreglo,n);
+          //  cout<<"El valor minimo es:"<<m<<endl;
+          //  break;
         }
     }
 }
@@ -113,3 +117,38 @@ void inidelaN(int a[20],int n){
 void sumatoria(int a[20],int n){
 
 }
+
+void minimo(int a[20],int n){
+
+}
+
+
+
+
+/*//Función para valor minimo
+
+int valor_min(int a[20], int n)
+{
+    min = 999;
+    for (int i = 0; i < n; i++)
+    {
+        if (a[i] < min)
+        {
+            min = a[i];
+        }
+    }
+    return min;
+}
+
+//Fución para sacar el promedio 
+
+void prom(int s,n){
+    float aux;
+    aux =s/n; // aux = float(s)/float(n);''
+    cout<<"pomedio:"
+    }
+    
+    //tambien usar la f suma anterior 
+    case 8:
+    prom(suma(arr, n),n);
+    break;*/
