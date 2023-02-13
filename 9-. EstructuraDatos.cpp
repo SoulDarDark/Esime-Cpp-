@@ -152,3 +152,56 @@ void prom(int s,n){
     case 8:
     prom(suma(arr, n),n);
     break;*/
+
+
+
+
+//insertar en el menú
+cout<<"insertar pos cero";
+cin>>"Seleccione la opción:";
+cin>>opc;
+switch(opc){
+
+}
+
+cout<< "12 Insertar pos cero\n";
+
+int iniManual (int a [20], int n)
+{
+    int i, vp;
+    for(i=0; i<n; i++){
+        cout<<"Ingresa a[<<i<<]:";
+        cin >> a[i];
+    }
+    vp=n-1;
+    return vp;
+}
+
+int iniAleatoria(INT A[20],int n){
+    int i, vp;
+    for(i=0; i<n, i++)
+    a[i]=1+rand()%100;
+    vp= n-1;
+    return vp;
+}
+
+int insertarPosCero(int a[20],int vp){
+    if(vp==1)
+    {
+        up=0;
+        cout<<"ingresa a[0]:";
+        cin<<a[0];
+    }
+    else{
+        vp++;
+        if(vp<=19){
+            for(i=vp; i<0; i--)
+            a[i]=a[i-1];
+            cout<<"Ingresa A[0]:";
+            cin>>a[0];
+        }
+        else
+        cout<<"El arreglo esta lleno";
+    }
+    return up;
+}
