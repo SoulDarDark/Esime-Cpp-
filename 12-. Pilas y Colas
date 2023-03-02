@@ -1,0 +1,132 @@
+//Junto para pila y cola
+#include <iostream>
+#include<algorithm>
+#include <stdlib.h>
+
+using namespace std;
+void imprimir(int arr[],int n);
+int iniManual(int[], int);
+int iniAleatoria(int[], int);
+void pila(int arr[], int n);
+int cola();
+
+int main(){
+    int op, array[10]={0}, up=-1,n;
+
+    while (1){
+        cout<<"_______________________________"<<endl;
+        cout<<"Menú Estructura de datos"<<endl;
+        cout<<"_______________________________\n"<<endl;
+        cout<<"0-. Imprimir"<<endl;
+        cout<<"1-. Inicialización manual"<<endl;
+        cout<<"2-. Inicialización aleatoria"<<endl;
+        cout<<"3-. Pila"<<endl;
+        cout<<"4-. Cola"<<endl;
+        cout<<"99-.Limpiar arreglo"<<endl;
+
+        cin>> op;
+
+        switch (op){
+            case 0:
+                    imprimir(array); 
+            break;
+
+            case 1:
+            break;
+
+            case 2:
+                    cout << "cuantos datos quieres ingresar:\n";
+				    cin >> n;
+				    up = iniAleatoria(array, n);
+            break;
+
+            case 3:
+                    pila(array, n);
+            break;
+
+            case 4:
+            break;
+        }
+    }
+
+    return 0;
+}
+
+void imprimir(int array[10])
+{
+    
+	int i;
+	cout << "Contenido del arreglo \n";
+	cout << "Subindice valor \n";
+	for (i = 0; i <= 19; i++) {  
+
+		cout<<"posicion: ["<<i << "]\t\t" << array[i] << "\n";
+	} 
+}
+int iniAleatoria(int array[10], int n) {
+	int i, up;
+	//srand(time(NULL));
+	for (i = 0; i < n; i++) {
+		array[i] = 1 + rand() % 100;
+	}
+	up = n - 1;
+	return up;
+}
+void ordenamientoPila(int arr[], int n) {
+    // Creamos un arreglo para representar las pilas
+    int pila[n];
+    // Inicializamos el número de pilas a 0
+    int npilas = 0;
+    // Imprimimos el arreglo original
+    cout << "Arreglo original: " << endl;
+    imprimir(array, n);
+    cout << endl;
+
+    // Iteramos sobre el arreglo de entrada
+    for (int i = 0; i < n; i++) {
+        // Buscamos la pila correcta para el elemento actual
+        int j = 0;
+        while (j < npilas && pila[j] < arr[i]) {
+            j++;
+        }
+        // Colocamos el elemento actual en la pila correcta
+        pila[j] = arr[i];
+        // Si no existe una pila suficientemente grande, creamos una nueva
+        if (j == npilas) {
+            npilas++;
+        }
+
+        // Imprimimos el estado actual de las pilas
+        cout << "Paso " << i+1 << ":" << endl;
+        for (int k = 0; k < npilas; k++) {
+            cout << "Pila " << k+1 << ": ";
+            for (int l = 0; l <= k; l++) {
+                cout << pila[l] << " ";
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
+
+    // Transferimos los elementos de las pilas de vuelta al arreglo original
+    int i = 0;
+    for (int j = 0; j < npilas; j++) {
+        // Buscamos el elemento en el arreglo original
+        int k = 0;
+        while (k < n && arr[k] != pila[j]) {
+            k++;
+        }
+        // Transferimos todos los elementos de la pila al arreglo original
+        while (k < n && arr[k] == pila[j]) {
+            arr[i] = pila[j];
+            i++;
+            k++;
+        }
+
+        // Imprimimos el estado actual del arreglo
+        cout << "Paso " << n+j+1 << ":" << endl;
+        imprimir(arr, n);
+        cout << endl;
+    }
+}
+
