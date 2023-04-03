@@ -1,3 +1,14 @@
+/*
+Case 8: Ordenación burbuja
+case 9: Shaker sort
+case 10: Selección Directa
+case 11:Selección Binaria
+case 12:Inserción Directa
+
+Para etregar el 17 de abril
+*/
+
+
 void burbuja(nodo *p)
 {
     int total=0,i,j,temp;
