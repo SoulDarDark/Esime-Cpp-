@@ -6,6 +6,7 @@
 using namespace std;
 
 cout<<"joan es puto";
+hola puerca
 
 int main()
 {
