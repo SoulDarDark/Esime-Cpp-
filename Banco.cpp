@@ -5,6 +5,8 @@
 
 using namespace std;
 
+cout<<"joan es puto";
+
 int main()
 {
 	//system ("color B1");
