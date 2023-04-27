@@ -20,7 +20,11 @@ como reproducir un archivoÂ desdeÂ c++
 #include<time.h>
 #include <stdlib.h>
 #include <windows.h>
+
+#include <mmsystem.h>
+=======
 #include <windows.h>
+
 
 using namespace std;
 
