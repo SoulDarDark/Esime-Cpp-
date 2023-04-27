@@ -71,7 +71,8 @@ int main(){
                 cout<<"1-. Basilisco"<<endl;
                 cout<<"2-. Cafune"<<endl;
                 cout<<"3-. A mis enemigos"<<endl;
-                cout<<"4-. Salir"<<endl;
+		cout<<"4-. Ella baila sola";
+                cout<<"5-. Salir"<<endl;
                 cout<<"Ingrese una opcion:";
                 cin>>letra;
 
